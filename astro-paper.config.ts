@@ -8,7 +8,7 @@ export default defineAstroPaperConfig({
     author: "Olandiamo",
     profile: "https://www.instagram.com/olandiamo",
     ogImage: "default-og.jpg",
-    lang: "it",
+    lang: "en",
     timezone: "Europe/Amsterdam",
     dir: "ltr",
   },
