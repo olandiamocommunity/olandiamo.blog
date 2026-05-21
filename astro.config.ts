@@ -18,7 +18,8 @@ import { transformerFileName } from "./src/utils/transformers/fileName";
 import config from "./astro-paper.config";
 
 export default defineConfig({
-  site: config.site.url,
+  site: "https://olandiamocommunity.github.io",
+base: "/olandiamo.blog",
   integrations: [
     mdx(),
     sitemap({
