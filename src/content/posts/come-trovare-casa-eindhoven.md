@@ -9,9 +9,9 @@ draft: false
 
 
 tags:
-  - casa
-  - eindhoven
-  - paesi bassi
+  - Casa
+  - Eindhoven
+  - Paesi bassi
 ---
 
 Trovare casa a Eindhoven può essere complicato, soprattutto se sei appena arrivato nei Paesi Bassi e non sai ancora bene come muoverti.
