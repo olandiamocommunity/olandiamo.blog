@@ -6,14 +6,14 @@
     @apply prose;
   }
 
-  .app-prose h1,
-  .app-prose h2,
-  .app-prose h3,
-  .app-prose h4,
-  .app-prose th {
-    @apply mb-3;
-    color: var(--foreground);
-  }
+.app-prose h1,
+.app-prose h2,
+.app-prose h3,
+.app-prose h4,
+.app-prose th {
+  @apply mb-3;
+  color: #b41111;
+}
 
   .app-prose h3 {
     @apply italic;
