@@ -70,7 +70,59 @@ const homePath = getRelativeLocaleUrl(locale, "");
       </div>
     </section>
 
-    <section class="border-t py-16 text-center" style="border-color: #ffd21f;">
+    {
+      featuredPosts.length > 0 && (
+        <section
+          id="featured"
+          class:list={[
+            "pt-16 pb-8",
+            { "border-border border-b": recentPosts.length > 0 },
+          ]}
+        >
+          <h2
+            class="text-4xl font-black tracking-wide"
+            style="color: #b41111;"
+          >
+            In evidenza
+          </h2>
+          <ul class="mt-6">
+            {featuredPosts.map(data => (
+              <Card variant="h3" {...data} />
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      recentPosts.length > 0 && (
+        <section id="recent-posts" class="py-16">
+          <div class="mb-8 flex items-center justify-between gap-4">
+            <h2
+              class="text-4xl font-black tracking-wide sm:text-5xl"
+              style="color: #b41111;"
+            >
+              Guide recenti
+            </h2>
+
+            <a
+              href={getRelativeLocaleUrl(locale, "posts")}
+              class="hidden text-lg font-bold sm:inline-flex"
+              style="color: #f17400;"
+            >
+              Vedi tutte →
+            </a>
+          </div>
+
+          <ul>
+            {recentPosts.slice(0, postsConfig.perIndex).map(data => (
+              <Card variant="h3" {...data} />
+            ))}
+          </ul>
+        </section>
+      )
+    }
+<section class="border-t py-16 text-center" style="border-color: #ffd21f;">
       <h2
         class="mx-auto max-w-4xl text-3xl font-black leading-tight tracking-wide sm:text-5xl"
         style="color: #b41111;"
@@ -125,60 +177,6 @@ const homePath = getRelativeLocaleUrl(locale, "");
         </div>
       </div>
     </section>
-
-    {
-      featuredPosts.length > 0 && (
-        <section
-          id="featured"
-          class:list={[
-            "pt-16 pb-8",
-            { "border-border border-b": recentPosts.length > 0 },
-          ]}
-        >
-          <h2
-            class="text-4xl font-black tracking-wide"
-            style="color: #b41111;"
-          >
-            In evidenza
-          </h2>
-          <ul class="mt-6">
-            {featuredPosts.map(data => (
-              <Card variant="h3" {...data} />
-            ))}
-          </ul>
-        </section>
-      )
-    }
-
-    {
-      recentPosts.length > 0 && (
-        <section id="recent-posts" class="py-16">
-          <div class="mb-8 flex items-center justify-between gap-4">
-            <h2
-              class="text-4xl font-black tracking-wide sm:text-5xl"
-              style="color: #b41111;"
-            >
-              Guide recenti
-            </h2>
-
-            <a
-              href={getRelativeLocaleUrl(locale, "posts")}
-              class="hidden text-lg font-bold sm:inline-flex"
-              style="color: #f17400;"
-            >
-              Vedi tutte →
-            </a>
-          </div>
-
-          <ul>
-            {recentPosts.slice(0, postsConfig.perIndex).map(data => (
-              <Card variant="h3" {...data} />
-            ))}
-          </ul>
-        </section>
-      )
-    }
-
     <div class="my-8 text-center sm:hidden">
       <LinkButton href={getRelativeLocaleUrl(locale, "posts")}>
         Vedi tutte le guide
