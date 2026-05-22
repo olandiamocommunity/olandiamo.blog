@@ -4,92 +4,106 @@
   /* ===== Override default Tailwind Typography styles ===== */
   .app-prose {
     @apply prose;
+  }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    th {
-      @apply text-foreground mb-3;
-    }
+  .app-prose h1,
+  .app-prose h2,
+  .app-prose h3,
+  .app-prose h4,
+  .app-prose th {
+    @apply mb-3;
+    color: var(--foreground);
+  }
 
-    h3 {
-      @apply italic;
-    }
+  .app-prose h3 {
+    @apply italic;
+  }
 
-    p,
-    strong,
-    ol,
-    ul,
-    figcaption,
-    table,
-    code {
-      @apply text-foreground;
-    }
+  .app-prose p,
+  .app-prose strong,
+  .app-prose ol,
+  .app-prose ul,
+  .app-prose figcaption,
+  .app-prose table,
+  .app-prose code {
+    color: var(--foreground);
+  }
 
-    a {
-      @apply text-foreground hover:text-accent wrap-break-word decoration-dashed underline-offset-4 focus-visible:no-underline;
-    }
+  .app-prose a {
+    @apply wrap-break-word decoration-dashed underline-offset-4 focus-visible:no-underline;
+    color: var(--foreground);
+  }
 
-    ul {
-      @apply overflow-x-clip;
-    }
+  .app-prose a:hover {
+    color: var(--accent);
+  }
 
-    li {
-      @apply marker:text-accent;
-    }
+  .app-prose ul {
+    @apply overflow-x-clip;
+  }
 
-    hr {
-      @apply border-border;
-    }
+  .app-prose li::marker {
+    color: var(--accent);
+  }
 
-    img {
-      @apply border-border mx-auto border;
-    }
+  .app-prose hr {
+    border-color: var(--border);
+  }
 
-    figcaption {
-      @apply opacity-75;
-    }
+  .app-prose img {
+    @apply mx-auto border;
+    border-color: var(--border);
+  }
 
-    table {
-      th,
-      td {
-        @apply border-border border p-2;
-      }
+  .app-prose figcaption {
+    @apply opacity-75;
+  }
 
-      th {
-        @apply py-1.5;
-      }
-    }
+  .app-prose table th,
+  .app-prose table td {
+    @apply border p-2;
+    border-color: var(--border);
+  }
 
-    code {
-      @apply bg-muted/75 text-foreground rounded p-1 wrap-break-word before:content-none after:content-none;
-    }
+  .app-prose table th {
+    @apply py-1.5;
+  }
 
-    .astro-code code {
-      @apply flex-[1_0_100%] bg-inherit p-0;
-    }
+  .app-prose code {
+    @apply rounded p-1 wrap-break-word before:content-none after:content-none;
+    color: var(--foreground);
+    background-color: color-mix(in srgb, var(--muted) 75%, transparent);
+  }
 
-    blockquote {
-      @apply border-s-accent/80 wrap-break-word opacity-80;
-    }
+  .app-prose .astro-code code {
+    @apply flex-[1_0_100%] bg-inherit p-0;
+  }
 
-    details {
-      @apply text-foreground inline-block cursor-pointer select-none [&_p]:hidden [&_ul]:my-0!;
-    }
+  .app-prose blockquote {
+    @apply wrap-break-word opacity-80;
+    border-inline-start-color: color-mix(in srgb, var(--accent) 80%, transparent);
+  }
 
-    summary {
-      @apply focus-visible:outline-accent focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-dashed;
-    }
+  .app-prose details {
+    @apply inline-block cursor-pointer select-none [&_p]:hidden [&_ul]:my-0!;
+    color: var(--foreground);
+  }
 
-    pre {
-      @apply focus-visible:outline-accent focus-visible:border-transparent focus-visible:outline-2 focus-visible:outline-dashed;
-    }
+  .app-prose summary {
+    @apply focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-dashed;
+    outline-color: var(--accent);
+  }
+
+  .app-prose pre {
+    @apply focus-visible:border-transparent focus-visible:outline-2 focus-visible:outline-dashed;
+    outline-color: var(--accent);
   }
 
   /* ===== Code Blocks & Syntax Highlighting ===== */
   .astro-code {
-    @apply outline-border flex border bg-(--shiki-light-bg) text-(--shiki-light) [&_span]:text-(--shiki-light);
+    @apply flex border bg-(--shiki-light-bg) text-(--shiki-light) [&_span]:text-(--shiki-light);
+    outline-color: var(--border);
+    border-color: var(--border);
   }
 
   html[data-theme="dark"] .astro-code {
@@ -97,19 +111,20 @@
   }
 
   /* Styles for Shiki transformers */
-  /* https://shiki.style/packages/transformers */
-  .astro-code {
-    .line.diff.add {
-      @apply relative inline-block w-full bg-green-400/20 before:absolute before:-left-3 before:text-green-500 before:content-['+'];
-    }
-    .line.diff.remove {
-      @apply relative inline-block w-full bg-red-500/20 before:absolute before:-left-3 before:text-red-500 before:content-['-'];
-    }
-    .line.highlighted {
-      @apply inline-block w-full bg-slate-400/20;
-    }
-    .highlighted-word {
-      @apply border-border rounded-sm border px-0.5 py-px;
-    }
+  .astro-code .line.diff.add {
+    @apply relative inline-block w-full bg-green-400/20 before:absolute before:-left-3 before:text-green-500 before:content-['+'];
+  }
+
+  .astro-code .line.diff.remove {
+    @apply relative inline-block w-full bg-red-500/20 before:absolute before:-left-3 before:text-red-500 before:content-['-'];
+  }
+
+  .astro-code .line.highlighted {
+    @apply inline-block w-full bg-slate-400/20;
+  }
+
+  .astro-code .highlighted-word {
+    @apply rounded-sm border px-0.5 py-px;
+    border-color: var(--border);
   }
 }
