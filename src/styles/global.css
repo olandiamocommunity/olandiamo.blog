@@ -6,18 +6,35 @@
 
 @layer base {
   * {
+<<<<<<< HEAD
     border-color: var(--border);
+=======
+    @applyborder-color: var(--border);
+>>>>>>> 2bf3bbe (Fix header title color)
     outline-color: color-mix(in srgb, var(--accent) 75%, transparent);
     scrollbar-width: auto;
     scrollbar-color: var(--muted) transparent;
   }
 
   a,
+<<<<<<< HEAD
   button {
     outline-color: var(--accent);
     @apply outline-offset-1 focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-dashed;
   }
 
+=======
+<<<<<<< HEAD
+button {
+  outline-color: var(--accent);
+  @apply outline-offset-1 focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-dashed;
+}
+=======
+  button {
+    @apply outline-offset-1 focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-dashed;
+  }
+>>>>>>> 2bf3bbe (Fix header title color)
+>>>>>>> 7bb8f59 (Fix header title color)
   button:not(:disabled),
   [role="button"]:not(:disabled) {
     cursor: pointer;
