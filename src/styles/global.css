@@ -32,6 +32,8 @@ button {
 
 @utility active-nav {
   @apply underline decoration-wavy decoration-2 underline-offset-8;
+  color: #b41111;
+  text-decoration-color: #ffd21f;
 }
 
 :target {
