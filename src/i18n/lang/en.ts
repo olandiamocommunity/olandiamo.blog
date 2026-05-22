@@ -4,9 +4,9 @@ export default {
   nav: {
     home: "Home",
     posts: "Posts",
-    tags: "Tags",
-    about: "About",
-    archives: "Archives",
+    tags: "Argomenti",
+    about: "Chi siamo",
+    archives: "Archivio",
     search: "Search",
   },
   post: {
