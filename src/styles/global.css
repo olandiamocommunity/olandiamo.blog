@@ -6,14 +6,16 @@
 
 @layer base {
   * {
-    @apply border-border outline-accent/75;
+    border-color: var(--border);
+    outline-color: color-mix(in srgb, var(--accent) 75%, transparent);
     scrollbar-width: auto;
-    scrollbar-color: var(--color-muted) transparent;
+    scrollbar-color: var(--muted) transparent;
   }
   a,
-  button {
-    @apply outline-accent outline-offset-1 focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-dashed;
-  }
+button {
+  outline-color: var(--accent);
+  @apply outline-offset-1 focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-dashed;
+}
   button:not(:disabled),
   [role="button"]:not(:disabled) {
     cursor: pointer;
