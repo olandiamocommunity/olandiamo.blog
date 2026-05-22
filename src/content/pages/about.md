@@ -1,37 +1,19 @@
 ---
-title: "About"
-description: "A bit about me and this blog."
+title: Chi siamo
+description: Olandiamo è una community e un punto di riferimento per italiani nei Paesi Bassi.
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+Olandiamo nasce per aiutare gli italiani nei Paesi Bassi a sentirsi più orientati, più connessi e meno soli.
 
-![Astro Paper](@/assets/images/astropaper-og.jpg)
+Siamo una community, ma anche un hub di servizi, guide e opportunità pensato per chi vive, studia, lavora o sta per trasferirsi in Olanda. Il nostro punto di partenza è Eindhoven, ma il nostro obiettivo è parlare a tutti gli italiani che cercano riferimenti chiari, supporto pratico e connessioni vere nella vita di tutti i giorni.
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+Vivere all’estero può essere bellissimo, ma anche complicato. Casa, lavoro, burocrazia, lingua, nuove abitudini e distanza da ciò che conosci possono rendere tutto più faticoso del previsto.
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+Olandiamo esiste proprio per questo: raccogliere informazioni utili, creare occasioni di incontro e rendere più semplice orientarsi in un nuovo contesto.
 
-## Features
+Qui trovi guide pratiche, contenuti utili e risorse pensate per rispondere ai bisogni reali della community. Non vogliamo essere solo un posto dove chiedere aiuto quando qualcosa non funziona, ma uno spazio in cui trovare valore, persone, idee e opportunità.
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+Il nostro approccio è semplice: essere vicini senza essere improvvisati, professionali senza essere freddi, concreti senza perdere il lato umano.
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
-
-and so much more.
-
-## Show your support
-
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
-
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
-
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
-
-Kyay zuu! 🙏🏼
+**In Olanda non sei solo.**  
+Olandiamo è qui per aiutarti a trovare la tua strada, una connessione alla volta.
