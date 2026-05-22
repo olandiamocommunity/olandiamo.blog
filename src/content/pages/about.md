@@ -2,6 +2,7 @@
 title: Chi siamo
 description: Olandiamo è una community e un punto di riferimento per italiani nei Paesi Bassi.
 ---
+![Gruppo Olandiamo](/olandiamo.blog/images/GRUPPO.JPG)
 
 Olandiamo nasce per aiutare gli italiani nei Paesi Bassi a sentirsi più orientati, più connessi e meno soli.
 
