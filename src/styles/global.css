@@ -54,8 +54,9 @@ button {
   color: #b41111;
   text-decoration-color: #ffd21f;
 }
-main h1 {
-  color: #b41111;
+main h1,
+main h1 * {
+  color: #b41111 !important;
 }
 :target {
   scroll-margin-block: 1rem;
